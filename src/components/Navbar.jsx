@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   const hireBtnClick = () => {
     window.scrollTo({
-      top: 760,
+      top: 800,
       left: 0,
       behavior: "smooth",
     });
@@ -33,7 +33,6 @@ export default function Navbar() {
 
           {/* Direct Link to Email for quick access */}
           <button
-            href="mailto:mdfardeenalam9818@gmail.com"
             className="hidden md:block bg-indigo-600 text-white px-5 py-2 rounded text-xs font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-500/20"
             onClick={hireBtnClick}
           >
