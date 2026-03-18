@@ -1,0 +1,33 @@
+import { useState } from "react";
+
+export default function ContactAction() {
+  const [copied, setCopied] = useState(false);
+  const email = "mdfardeenalam9818@gmail.com";
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <div className="flex flex-col items-center group">
+      <button
+        onClick={handleCopy}
+        className="text-2xl md:text-4xl font-bold text-slate-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-all cursor-pointer relative"
+      >
+        {email}
+        {/* Animated underline */}
+        <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all group-hover:w-full"></span>
+      </button>
+
+      <p
+        className={`mt-4 text-sm font-medium transition-all duration-300 ${copied ? "text-green-500 scale-110" : "text-slate-400 opacity-0 group-hover:opacity-100"}`}
+      >
+        {copied
+          ? "✓ Email copied to clipboard!"
+          : "Click to copy email address"}
+      </p>
+    </div>
+  );
+}
