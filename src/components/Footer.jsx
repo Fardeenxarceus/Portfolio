@@ -2,9 +2,9 @@ import ContactAction from "./ContactAction";
 
 export default function Footer() {
   return (
-    <footer className="mt-5 pb-20 px-6 border-t border-slate-200 dark:border-slate-800">
+    <footer className="mt-5 pb-20 px-6 border-t border-slate-200 light:border-slate-800">
       <div className="max-w-7xl mx-auto pt-24 text-center">
-        <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-slate-900 dark:text-white mb-12">
+        <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-slate-900 light:text-white mb-12">
           Ready to start a <br />
           <span className="text-indigo-600 italic">new project?</span>
         </h2>

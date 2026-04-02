@@ -3,13 +3,13 @@ import { projects } from "../data/project";
 
 export default function Work() {
   return (
-    <div className="min-h-screen not-dark:bg-slate-300 dark:bg-[#020617] transition-colors duration-500">
+    <div className="min-h-screen not-light:bg-slate-300 light:bg-[#020617] transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-6 pt-32 pb-20">
         <header className="mb-20">
-          <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-slate-900 dark:text-white mb-6">
+          <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-slate-900 light:text-white mb-6">
             Selected <span className="text-indigo-600 italic">Work.</span>
           </h1>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
+          <p className="text-lg text-slate-600 light:text-slate-400 max-w-xl leading-relaxed">
             A collection of frontend projects focusing on complex state
             management and responsive UI.
           </p>

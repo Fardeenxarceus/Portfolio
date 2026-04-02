@@ -7,10 +7,10 @@ export default function Home() {
     <div className="max-w-7xl mx-auto px-6 py-20">
       {/* Hero */}
       <section className="text-center mb-32 pt-10">
-        <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-slate-900 dark:text-white">
+        <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-slate-900 light:text-white">
           Frontend <span className="text-indigo-600 italic">Engineer.</span>
         </h1>
-        <p className="mt-8 text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        <p className="mt-8 text-xl text-slate-600 light:text-slate-400 max-w-2xl mx-auto leading-relaxed">
           Specializing in building clean, responsive, and user-centric web
           applications. Expertise in React, modern state management, and
           pixel-perfect CSS.
@@ -18,7 +18,7 @@ export default function Home() {
         <div className="mt-10 flex justify-center gap-4">
           <Link
             to="/work"
-            className="bg-slate-900 dark:bg-white text-white dark:text-black px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-transform"
+            className="bg-slate-900 light:bg-blue-100/50 text-white light:text-black px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-transform"
           >
             View My Work
           </Link>{" "}

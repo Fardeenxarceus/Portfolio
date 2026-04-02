@@ -12,7 +12,7 @@ body {
 h1,
 h2,
 h3 {
-  @apply text-slate-900 dark:text-white transition-colors;
+  @apply text-slate-900 light:text-white transition-colors;
 }
 
 /* Custom Scrollbar for that 'Pro' feel */
@@ -23,11 +23,17 @@ h3 {
   @apply bg-transparent;
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-300 dark:bg-slate-800 rounded-full;
+  @apply bg-slate-300 light:bg-slate-800 rounded-full;
 }
 @keyframes reveal {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .reveal {

@@ -21,7 +21,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="p-3 rounded-2xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:scale-110 transition-all duration-300 group"
+      className="p-3 rounded-2xl bg-slate-100 light:bg-slate-800 border border-slate-200 light:border-slate-700 hover:scale-110 transition-all duration-300 group"
       aria-label="Toggle Theme"
     >
       {darkMode ? (

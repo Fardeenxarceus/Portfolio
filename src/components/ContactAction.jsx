@@ -15,7 +15,7 @@ export default function ContactAction() {
       <div className="flex flex-col items-center group">
         <button
           onClick={handleCopy}
-          className="text-2xl md:text-4xl font-bold text-slate-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-all cursor-pointer relative"
+          className="text-2xl md:text-4xl font-bold text-white hover:text-indigo-600 light:hover:text-indigo-400 transition-all cursor-pointer relative"
         >
           {email}
           {/* Animated underline */}
@@ -34,7 +34,7 @@ export default function ContactAction() {
         <a
           target="_blank"
           href="https://fardeenxarceus.github.io/Resume/resume.pdf"
-          className="hidden md:block bg-indigo-600 text-white px-5 py-2 rounded text-xs font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-500/20"
+          className="bg-indigo-600 text-white px-5 py-2 rounded text-xs font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-500/20"
           onClick={() => {}}
         >
           Go to resume page

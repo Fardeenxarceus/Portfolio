@@ -2,20 +2,20 @@ export default function ProjectCard({ project }) {
   return (
     <div
       className={`group relative rounded-2xl p-1 border transition-all duration-500 
-      bg-white border-slate-200 hover:shadow-2xl 
-      dark:bg-slate-900 dark:border-slate-800 dark:hover:border-indigo-500/50 ${project.size}`}
+      bg-blue-100/50 border-slate-200 hover:shadow-2xl 
+      light:bg-slate-900 light:border-slate-800 light:hover:border-indigo-500/50 ${project.size}`}
     >
       <div className="p-8 h-full flex flex-col justify-between">
         <div>
           <div className="flex justify-between items-start">
-            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-600 dark:text-indigo-400">
+            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-600 light:text-indigo-400">
               {project.category}
             </span>
             <div className="flex gap-3">
               <a
                 href={project.github}
                 target="_blank"
-                className="text-slate-400 hover:text-indigo-600 dark:hover:text-white transition-colors"
+                className="text-slate-400 hover:text-indigo-600 light:hover:text-white transition-colors"
               >
                 <svg
                   width="20"
@@ -28,10 +28,10 @@ export default function ProjectCard({ project }) {
               </a>
             </div>
           </div>
-          <h3 className="text-3xl font-bold mt-3 text-slate-900 dark:text-white leading-tight">
+          <h3 className="text-3xl font-bold mt-3 text-slate-900 light:text-white leading-tight">
             {project.title}
           </h3>
-          <p className="mt-4 text-slate-600 dark:text-slate-400 text-sm leading-relaxed max-w-sm">
+          <p className="mt-4 text-slate-600 light:text-slate-400 text-sm leading-relaxed max-w-sm">
             {project.description}
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function ProjectCard({ project }) {
             {project.tech.map((t) => (
               <span
                 key={t}
-                className="px-3 py-1 text-[10px] font-bold rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700"
+                className="px-3 py-1 text-[10px] font-bold rounded-lg bg-slate-100 light:bg-slate-800 text-slate-600 light:text-slate-300 border border-slate-200 light:border-slate-700"
               >
                 {t}
               </span>
@@ -50,7 +50,7 @@ export default function ProjectCard({ project }) {
           <a
             href={project.link}
             target="_blank"
-            className="inline-flex items-center text-sm font-bold text-indigo-600 dark:text-indigo-400 group-hover:gap-3 transition-all"
+            className="inline-flex items-center text-sm font-bold text-indigo-600 light:text-indigo-400 group-hover:gap-3 transition-all"
           >
             Live Demo <span className="ml-2">→</span>
           </a>
